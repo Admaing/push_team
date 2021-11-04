@@ -12,3 +12,7 @@
 
 排序加双指针
 
+git config --local user.email "471218449@qq.com"
+
+git config --global user.name "Adaming"
+
