@@ -12,6 +12,10 @@
 
 排序加双指针
 
+# 星期四
+
+脚伤惹，请一天假（找借口
+
 git config --local user.email "471218449@qq.com"
 
 git config --global user.name "Adaming"
