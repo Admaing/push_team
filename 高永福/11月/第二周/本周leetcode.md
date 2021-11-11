@@ -38,3 +38,63 @@ func max(a int,b int) int{
 
 ```
 
+
+
+
+
+# 最长回文子串
+
+动态规划
+
+特判：小于二的时候一定是回文串
+
+状态方程：
+
+```go
+func longestPalindrome(s string) string {
+	if len(s) < 2 {
+		return s
+	}
+	println(len(s))
+
+	maxlen := 1
+
+	dp := make([][]bool, len(s))
+	for i := 0; i < len(s); i++ {
+		dp[i] = make([]bool, len(s))
+	}
+
+
+	begin := 0
+	for L := 2; L <= len(s); L++ {
+		for i := 0; i < len(s); i++ {
+			j := L + i - 1
+			if j >= len(s) {
+				break
+			}
+
+			if s[i] != s[j] {
+				dp[i][j] = false
+			} else {
+				if j-i < 3 {
+					dp[i][j] = true
+				} else {
+					dp[i][j] = dp[i+1][j-1]
+				}
+			}
+
+			if dp[i][j] == true && j-i+1 > maxlen {
+				maxlen = j - i + 1
+				begin = i
+			}
+
+		}
+
+	}
+
+	return s[begin : begin+maxlen]
+}
+
+```
+
+## 星期二
