@@ -68,3 +68,4 @@ IPAD
 
 收到数据如何构建链，之前的数据如何保存
 
+RDIC: A blockchain-based remote data integrity checking scheme for IoT in 5G networks

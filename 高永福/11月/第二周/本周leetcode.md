@@ -97,4 +97,49 @@ func longestPalindrome(s string) string {
 
 ```
 
-## 星期二
+## 61 闭环链表
+
+解题思路
+
+此处撰写解题思路
+同官方题解
+闭环链表
+
+如果k大于链表的长度，则唯一的次数应该为k%n,当该数等于0时，说明正好位移一个完整的轮次，或者根本没动，
+
+因此根据上述，首先计算链表长度，然后将链表头尾连接，进行长度位移，最后将位移的最后一位指向null，
+即将链表打开，返回下一个节点
+代码
+
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+
+func rotateRight(head *ListNode, k int) *ListNode {
+    if head==nil || head.Next==nil || k==0{
+        return head
+
+    }
+    
+    a :=head
+    num := 1
+    for a.Next!=nil{
+        a = a.Next
+        num++
+    }
+
+
+    add := num - k%num
+    if add == num{
+        return head
+    }
+    a.Next = head
+    
+    for add>0{
+        a = a.Next
+        add--
+
