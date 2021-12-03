@@ -8,7 +8,9 @@
 
 
 
-富执行环境REE是什么，
+
+
+
 
 GDH问题
 
@@ -31,7 +33,7 @@ CSP
 setup,private key generation,signa-
 ture generation,challenge,signature aggregationandverify
 
-
+-+
 
 TEE是因为在自己的环境下所以是足够安全的，还是因为他自身就是足够安全的
 
