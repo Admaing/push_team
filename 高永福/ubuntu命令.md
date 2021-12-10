@@ -1,6 +1,6 @@
 dokcer inspect
 
-cp 文件 目标文件
+cp 文件 目标文件	
 
 rm -rf 删除所有
 

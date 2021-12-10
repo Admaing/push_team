@@ -62,3 +62,20 @@ mapping(_KeyType => _ValueType)
 ```
 
 后面为变量名
+
+
+
+
+
+# 断言
+
+require和assert会判断条件是否相等
+
+不同的是，require会返回剩余gas，但是assert会烧掉剩余的gas
+
+
+
+# msg.sender
+
+实时变化的变量
+
