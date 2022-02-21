@@ -77,7 +77,13 @@ EHR 电子健康医疗记录
 
 # 基础知识
 
+- 双线性映射
+- Boneh-Boyen signature
+  - ![image-20220221081608488](C:\Users\26424\AppData\Roaming\Typora\typora-user-images\image-20220221081608488.png)
+  - 在Zp中对明文m签名
 
+- Signature-based range proof
+- 施密尔加密共享方案
 
 # 本文的理解和认识
 
