@@ -80,7 +80,7 @@ EHR 电子健康医疗记录
 - 双线性映射
 - Boneh-Boyen signature
   - ![image-20220221081608488](C:\Users\26424\AppData\Roaming\Typora\typora-user-images\image-20220221081608488.png)
-  - 在Zp中对明文m签名
+  - 在Zp中对明文m签名 ？ g^ 
 
 - Signature-based range proof
 - 施密尔加密共享方案
@@ -101,7 +101,7 @@ EHR 电子健康医疗记录
 
 # 方法和途径（主要idea，画图，关键技术）
 
-
+工作流：
 
 
 
